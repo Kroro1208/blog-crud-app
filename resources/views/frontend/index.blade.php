@@ -9,7 +9,13 @@
                 $type = "success";
             @endphp
             <x-alert-message :type="$type" :message="$successMessage" />
+            <hr>
             <h4>Welcome to Index Page</h4>
+            <hr>
+            <x-form.label value='My First Name'/>
+            <x-form.label>
+                My Slot Name
+            </x-form.label>
         </div>
     </div>
     <x-slot name="scripts">
