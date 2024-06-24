@@ -9,10 +9,11 @@
     <title>{{ $title ?? "Laravel Blog Tutorial"}}</title>
 </head>
 <body>
+    <x-partials.navbar />
     <div>
         {{ $slot }}
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    {{ $scripts }}
+    {{ $scripts ?? "" }}
 </body>
 </html>
