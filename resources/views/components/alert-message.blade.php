@@ -1,7 +1,3 @@
-
-@props([
-    'message'
-    ])
-<div class="alert alert-success">
+<div {{ $attributes->merge(['class' => 'alert alert-'.$type]) }}>
     <h5>{{ $message }}</h5>
 </div>
