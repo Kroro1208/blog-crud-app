@@ -44,10 +44,10 @@
                         <div class="form-check">
                             <input type="checkbox" name="is_active" class="form-check-input" id="is_active" {{ old('is_active') ? 'checked' : '' }}>
                             <label class="form-check-label" for="is_active">有効</label>
-                            @error('is_active')
-                                <span class="text-danger">{{ $message }}</span>
-                            @enderror
                         </div>
+                        @error('is_active')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
                     </div>
                     <button type="submit" class="btn btn-primary">保存</button>
                 </form>
