@@ -7,6 +7,7 @@
 ## blade
 
 `php artisan make:component AppWebLayout `
+`php artisan make:component AlertMessage`
 
 ## BootStrap CDN
 
